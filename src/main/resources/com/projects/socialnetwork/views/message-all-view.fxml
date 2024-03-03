@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="com.projects.socialnetwork.controllers.MessageAllController"
+        maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="messageAllFriendsListView" layoutX="-2.0" prefHeight="400.0" prefWidth="222.0" />
+      <Button onAction="#addUserToSendList" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" text="Add User" />
+      <TextField fx:id="toUsersTextField" layoutX="279.0" layoutY="70.0" prefHeight="24.0" prefWidth="307.0" />
+      <Label layoutX="230.0" layoutY="70.0" prefHeight="24.0" prefWidth="49.0" text="To : " />
+      <TextArea fx:id="messageAreaText" layoutX="244.0" layoutY="125.0" prefHeight="200.0" prefWidth="321.0" />
+      <Button onAction="#handleSendMessageToAllUsers" layoutX="327.0" layoutY="333.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="91.0" text="Send">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
